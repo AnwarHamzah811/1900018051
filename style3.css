@@ -1,0 +1,27 @@
+*,*::after,*::before{box-sizing:border-box}
+html{font-size:62.5%}
+.cd-form fieldset{opacity:100;margin:1.5em 2em;}
+.cd-form fieldset>div,.cd-form fieldset .cd-credit-card>div{padding-top:1.2em}
+.cd-form fieldset>.cd-credit-card{padding-top:0}
+.cd-form legend{width:95%;font-size:2.3rem;line-height:1.2;padding-bottom:.3em;border-bottom:1px solid #e5e5e5}
+.cd-form input[type=radio],.cd-form label{cursor:pointer}
+.cd-form label{font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#b2b2b2}
+.cd-form input[type=radio]+label{color:#0f222b}
+.cd-form input[type=text],.cd-form input[type=email],.cd-form input[type=password],.cd-form select,.cd-form textarea{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none;height:45px;border:2px solid #e5e5e5;border-radius:0;background:0 0}
+.cd-form input[type=text]:focus,.cd-form input[type=email]:focus,.cd-form input[type=password]:focus,.cd-form select:focus,.cd-form textarea:focus{outline:none;border-color:#95ac5f}
+.cd-form input[type=text],.cd-form input[type=email],.cd-form input[type=password]{width:100%;display:block;margin-top:6px;padding:0 16px}
+.cd-form select{padding:0 25px 0 15px;font-size:1.4rem}
+.cd-form select::-ms-expand{display:none}
+.cd-form .cd-credit-card b{display:block}
+.cd-form .cd-credit-card p{padding-bottom:.5em}
+.cd-form .cd-credit-card p:last-of-type{width:100px}
+.cd-form .cd-select{display:inline-block;position:relative;margin-top:6px}
+.cd-form .half-width{width:45%;float:left;margin-right:4%}
+.cd-form .half-width:nth-of-type(2n){margin-right:0}
+.cd-form input[type=submit]{float:right}
+.cd-form .cd-credit-card p:nth-of-type(2){width:25%;margin-right:4%}
+.cd-form .cd-credit-card p:nth-of-type(2){width:48%;margin-right:0}
+.cd-form .cd-credit-card p:nth-of-type(3){width:19%;margin-right:0}}
+.cd-form input[type=submit]{display:inline-block;padding:1em 1.8em;border-radius:50em;text-transform:uppercase;font-size:1.3rem;font-weight:700}
+.cd-form input[type=submit]{background-color:#df4f71;color:#fff;border:none;cursor:pointer}
+fieldset{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
