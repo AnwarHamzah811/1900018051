@@ -28,7 +28,7 @@
 
 <div class="half-width">
 <label>Repeat Password :</label>
-<input type="password" name="pass">
+<input type="password" name="pass2">
 </div>
 
 <div class="half-width">
@@ -185,14 +185,14 @@
 <div class="half-width">
 <p>
 <label>Nomor Telepon Seluler :</label>
-<input type="text" name="hp">
+<input type="text" name="hp" onkeypress="return hanyaAngka(event)">
 </p>
 </div>
 
 <div class="half-width">
 <p>
 <label>Nomor Telepon Rumah :</label>
-<input type="text" name="home">
+<input type="text" name="home" onkeypress="return hanyaAngka(event)">
 </p>
 </div>
 
@@ -313,6 +313,14 @@
 </fieldset>
 </form>
 </div> 
+<script>
+        function hanyaAngka(event) {
+            var angka = (event.which) ? event.which : event.keyCode
+            if (angka != 46 && angka > 31 && (angka < 48 || angka > 57))
+                return false;
+            return true;
+        }
+    </script>
  <script>
         function validateForm() {
             if (document.forms["formPendaftaran"]["nama"].value == "") {
@@ -333,6 +341,11 @@
              if (document.forms["formPendaftaran"]["pass"].value == "") {
                 alert("Password Tidak Boleh Kosong");
                 document.forms["formPendaftaran"]["pass"].focus();
+                return false;
+            }
+		if (document.forms["formPendaftaran"]["pass2"].value == "") {
+                alert("Password Tidak Boleh Kosong");
+                document.forms["formPendaftaran"]["pass2"].focus();
                 return false;
             }
             if (document.forms["formPendaftaran"]["hp"].value == "") {
